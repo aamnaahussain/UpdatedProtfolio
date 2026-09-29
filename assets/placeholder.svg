@@ -1,0 +1,10 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Screenshot placeholder">
+  <rect width="400" height="300" fill="#F1F3F7"/>
+  <rect x="4" y="4" width="392" height="292" fill="none" stroke="#C7CCD6" stroke-width="2" stroke-dasharray="8 7" rx="6"/>
+  <g transform="translate(200,128)">
+    <rect x="-34" y="-24" width="68" height="48" rx="6" fill="none" stroke="#A7AEBD" stroke-width="3"/>
+    <circle cx="-16" cy="-8" r="6" fill="none" stroke="#A7AEBD" stroke-width="3"/>
+    <path d="M -34 16 L -8 -4 L 8 10 L 20 0 L 34 16" fill="none" stroke="#A7AEBD" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  </g>
+  <text x="200" y="192" font-family="Arial, sans-serif" font-size="15" font-weight="600" fill="#8A93A6" text-anchor="middle">Screenshot to be added</text>
+</svg>

@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Amna Hussain | Project Manager | Agile, Planning &amp; Execution</title>
+<meta name="description" content="Amna Hussain, Project Manager specializing in Agile delivery, stakeholder management, and cross-functional execution."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --ink:#12141C; --ink-soft:#525873; --ink-faint:#8A90A6;
+  --bg:#FFFFFF; --bg-soft:#F7F8FA; --bg-alt:#F0F2F6;
+  --border:#E4E7EE;
+  --accent:#2F5FF6; --accent-dark:#1E3FAE; --accent-soft:#EEF2FF;
+  --gold:#B7791F; --gold-soft:#FBF3E4;
+  --applied:#1D7A5F; --applied-soft:#E7F5EF;
+  --practice:#2F5FF6; --practice-soft:#EEF2FF;
+  --familiar:#8A90A6; --familiar-soft:#F0F2F6;
+  --shadow-sm:0 1px 2px rgba(18,20,28,0.06);
+  --shadow-md:0 8px 28px rgba(18,20,28,0.08);
+  --shadow-lg:0 24px 60px rgba(18,20,28,0.12);
+  --radius:14px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',sans-serif;color:var(--ink);background:var(--bg);overflow-x:hidden;font-size:16px;line-height:1.5;}
+h1,h2,h3,h4{font-family:'Space Grotesk',sans-serif;letter-spacing:-0.01em;}
+img{max-width:100%;display:block;}
+a{color:inherit;}
+::-webkit-scrollbar{width:8px;}::-webkit-scrollbar-track{background:var(--bg-soft);}::-webkit-scrollbar-thumb{background:var(--ink-faint);border-radius:8px;}
+
+.wrap{max-width:1200px;margin:0 auto;padding:0 40px;}
+
+/* ---------- NAV ---------- */
+nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(255,255,255,0.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);}
+.nav-inner{max-width:1200px;margin:0 auto;padding:0 40px;height:72px;display:flex;align-items:center;justify-content:space-between;}
+.nav-logo{font-family:'Space Grotesk',sans-serif;font-size:18px;font-weight:700;color:var(--ink);text-decoration:none;letter-spacing:-0.01em;}
+.nav-logo span{color:var(--accent);}
+.nav-links{display:flex;align-items:center;gap:36px;list-style:none;}
+.nav-links a{font-size:13.5px;font-weight:500;color:var(--ink-soft);text-decoration:none;transition:color .2s;position:relative;padding:4px 0;}
+.nav-links a:hover, .nav-links a.active{color:var(--ink);}
+.nav-links a.active::after{content:'';position:absolute;left:0;right:0;bottom:-4px;height:2px;background:var(--accent);border-radius:2px;}
+.nav-cta{display:flex;align-items:center;gap:14px;}
+.nav-resume{font-size:13px;font-weight:600;color:var(--ink);text-decoration:none;padding:9px 18px;border:1px solid var(--border);border-radius:8px;transition:all .2s;white-space:nowrap;}
+.nav-resume:hover{border-color:var(--ink);background:var(--bg-soft);}
+.nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px;}
+.nav-toggle span{width:22px;height:2px;background:var(--ink);border-radius:2px;transition:all .25s;}
+.mobile-menu{display:none;position:fixed;top:72px;left:0;right:0;bottom:0;background:var(--bg);z-index:150;padding:32px 40px;flex-direction:column;gap:4px;overflow-y:auto;}
+.mobile-menu a{font-size:20px;font-weight:600;font-family:'Space Grotesk',sans-serif;color:var(--ink);text-decoration:none;padding:16px 0;border-bottom:1px solid var(--border);}
+.mobile-menu .nav-resume{margin-top:20px;text-align:center;}
+
+/* ---------- BUTTONS ---------- */
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 26px;font-size:14px;font-weight:600;border-radius:9px;text-decoration:none;cursor:pointer;border:1px solid transparent;transition:transform .18s ease, box-shadow .18s ease, background .18s ease, color .18s ease;}
+.btn-primary{background:var(--ink);color:#fff;}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:var(--shadow-md);}
+.btn-outline{background:#fff;color:var(--ink);border-color:var(--border);}
+.btn-outline:hover{border-color:var(--ink);transform:translateY(-2px);}
+.btn-ghost{background:var(--accent-soft);color:var(--accent-dark);}
+.btn-ghost:hover{background:#E2E9FF;transform:translateY(-2px);}
+
+/* ---------- HERO ---------- */
+.hero{padding:168px 0 0;background:linear-gradient(180deg,var(--bg-soft) 0%,#fff 78%);}
+.hero-inner{max-width:1200px;margin:0 auto;padding:0 40px 90px;display:grid;grid-template-columns:1.15fr 0.85fr;gap:64px;align-items:center;}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:600;color:var(--gold);background:var(--gold-soft);border:1px solid rgba(183,121,31,0.25);padding:7px 14px 7px 10px;border-radius:999px;margin-bottom:24px;}
+.hero-badge svg{flex-shrink:0;}
+.hero h1{font-size:clamp(38px,4.6vw,58px);font-weight:700;color:var(--ink);line-height:1.05;margin-bottom:10px;}
+.hero-role{font-size:clamp(15px,1.6vw,18px);font-weight:600;color:var(--accent-dark);margin-bottom:20px;}
+.hero-sub{font-size:16px;color:var(--ink-soft);line-height:1.75;max-width:520px;margin-bottom:44px;}
+.hero-stats{display:flex;gap:40px;flex-wrap:wrap;}
+.stat-num{font-family:'Space Grotesk',sans-serif;font-size:26px;font-weight:700;color:var(--ink);line-height:1;}
+.stat-label{font-size:12px;color:var(--ink-faint);margin-top:6px;max-width:130px;line-height:1.4;}
+.hero-photo{position:relative;}
+.hero-photo-frame{position:relative;border-radius:20px;overflow:hidden;box-shadow:var(--shadow-lg);aspect-ratio:4/5;}
+.hero-photo-frame img{width:100%;height:100%;object-fit:cover;}
+.hero-float-card{position:absolute;bottom:-22px;left:-22px;background:#fff;border:1px solid var(--border);border-radius:12px;padding:14px 18px;box-shadow:var(--shadow-md);display:flex;align-items:center;gap:12px;}
+.hero-float-icon{width:38px;height:38px;border-radius:9px;background:var(--applied-soft);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--applied);}
+.hero-float-card strong{display:block;font-size:13px;color:var(--ink);}
+.hero-float-card span{font-size:11.5px;color:var(--ink-faint);}
+
+/* ---------- TRUST STRIP ---------- */
+.trust{border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:#fff;}
+.trust-grid{max-width:1200px;margin:0 auto;padding:36px 40px;display:grid;grid-template-columns:repeat(4,1fr);gap:0;}
+.trust-item{display:flex;gap:14px;align-items:flex-start;padding:0 24px;border-left:1px solid var(--border);}
+.trust-item:first-child{border-left:none;padding-left:0;}
+.trust-icon{width:36px;height:36px;border-radius:9px;background:var(--accent-soft);color:var(--accent-dark);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.trust-item h4{font-size:13.5px;font-weight:700;color:var(--ink);margin-bottom:3px;}
+.trust-item p{font-size:12.5px;color:var(--ink-faint);line-height:1.5;}
+
+/* ---------- SECTIONS ---------- */
+section{padding:104px 0;}
+.section-head{max-width:640px;margin-bottom:56px;}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:var(--accent-dark);margin-bottom:14px;}
+.eyebrow::before{content:'';width:18px;height:2px;background:var(--accent);border-radius:2px;}
+.section-title{font-size:clamp(28px,3.2vw,38px);font-weight:700;color:var(--ink);line-height:1.15;margin-bottom:14px;}
+.section-lead{font-size:15.5px;color:var(--ink-soft);line-height:1.75;}
+.bg-soft{background:var(--bg-soft);}
+
+/* ---------- ABOUT ---------- */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;}
+.about-text p{font-size:15px;color:var(--ink-soft);line-height:1.85;margin-bottom:16px;}
+.about-text strong{color:var(--ink);font-weight:600;}
+.value-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.value-card{padding:22px;background:#fff;border:1px solid var(--border);border-radius:var(--radius);transition:box-shadow .2s, transform .2s;}
+.value-card:hover{box-shadow:var(--shadow-md);transform:translateY(-2px);}
+.value-icon{width:34px;height:34px;border-radius:8px;background:var(--accent-soft);color:var(--accent-dark);display:flex;align-items:center;justify-content:center;margin-bottom:12px;}
+.value-card h4{font-size:14px;font-weight:700;color:var(--ink);margin-bottom:6px;}
+.value-card p{font-size:12.5px;color:var(--ink-faint);line-height:1.6;}
+
+/* ---------- SKILLS ---------- */
+.skills-legend{display:flex;gap:22px;flex-wrap:wrap;margin-bottom:32px;font-size:12.5px;color:var(--ink-faint);}
+.legend-dot{width:8px;height:8px;border-radius:50%;display:inline-block;margin-right:6px;}
+.skills-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+.skill-group{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:26px 22px;}
+.skill-group h4{font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--ink-faint);margin-bottom:16px;}
+.skill-item{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:13.5px;color:var(--ink);padding:9px 0;border-bottom:1px solid var(--bg-alt);}
+.skill-item:last-child{border-bottom:none;}
+.skill-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;}
+
+.skill-photos{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-bottom:28px;}
+.skill-photo{background:#fff;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:box-shadow .2s, transform .2s;}
+.skill-photo:hover{box-shadow:var(--shadow-md);transform:translateY(-2px);}
+.skill-photo img{width:100%;aspect-ratio:3/2;object-fit:cover;background:var(--bg-alt);}
+.skill-photo-body{padding:16px 18px 18px;}
+.skill-photo-body h4{font-size:15px;font-weight:700;color:var(--ink);margin-bottom:4px;}
+.skill-photo-body p{font-size:12.5px;color:var(--ink-faint);line-height:1.55;}
+
+/* ---------- TIMELINE (Experience) ---------- */
+.timeline{position:relative;}
+.tl-entry{display:grid;grid-template-columns:190px 1fr;gap:40px;position:relative;padding-bottom:48px;}
+.tl-entry:last-child{padding-bottom:0;}
+.tl-entry::before{content:'';position:absolute;left:190px;top:6px;bottom:-42px;width:1px;background:var(--border);margin-left:-1px;}
+.tl-entry:last-child::before{display:none;}
+.tl-dot{position:absolute;left:190px;top:4px;width:11px;height:11px;border-radius:50%;background:var(--accent);border:3px solid var(--accent-soft);margin-left:-6px;}
+.tl-date{font-size:12px;font-weight:600;color:var(--ink-faint);padding-top:0;}
+.tl-content{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:26px 28px;}
+.tl-role{font-size:17px;font-weight:700;color:var(--ink);margin-bottom:3px;}
+.tl-company{font-size:13.5px;color:var(--accent-dark);font-weight:600;margin-bottom:14px;}
+.tl-company span{color:var(--ink-faint);font-weight:400;}
+.tl-content p.desc{font-size:14px;color:var(--ink-soft);line-height:1.75;margin-bottom:16px;}
+.tag-row{display:flex;flex-wrap:wrap;gap:8px;}
+.tag{font-size:11.5px;font-weight:500;padding:5px 11px;background:var(--bg-soft);border:1px solid var(--border);color:var(--ink-soft);border-radius:7px;}
+
+/* ---------- PROJECTS / CASE STUDIES ---------- */
+.proj-subhead{display:flex;align-items:center;gap:14px;margin:64px 0 28px;}
+.proj-subhead:first-of-type{margin-top:0;}
+.proj-subhead h3{font-size:13px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;color:var(--ink);white-space:nowrap;}
+.proj-subhead .line{flex:1;height:1px;background:var(--border);}
+.proj-subhead p{font-size:13px;color:var(--ink-faint);white-space:nowrap;}
+
+.case-card{background:#fff;border:1px solid var(--border);border-radius:20px;margin-bottom:24px;overflow:hidden;transition:box-shadow .25s;}
+.case-card:hover{box-shadow:var(--shadow-md);}
+.case-head{padding:32px 36px 0;}
+.case-badges{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px;}
+.badge{font-size:11px;font-weight:700;letter-spacing:.4px;padding:5px 11px;border-radius:999px;}
+.badge-real{background:var(--applied-soft);color:var(--applied);}
+.badge-case{background:var(--practice-soft);color:var(--practice);}
+.badge-conf{background:var(--bg-alt);color:var(--ink-faint);}
+.case-head h3{font-size:22px;font-weight:700;color:var(--ink);margin-bottom:10px;line-height:1.3;}
+.case-context{font-size:14px;color:var(--ink-soft);line-height:1.75;max-width:760px;margin-bottom:26px;}
+.case-cols{display:grid;grid-template-columns:1fr 1fr;gap:32px;padding:0 36px;margin-bottom:26px;}
+.case-col h5{font-size:11.5px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--ink-faint);margin-bottom:12px;}
+.case-col ul{list-style:none;display:flex;flex-direction:column;gap:9px;}
+.case-col li{font-size:13.5px;color:var(--ink-soft);line-height:1.6;padding-left:18px;position:relative;}
+.case-col li::before{content:'';position:absolute;left:0;top:7px;width:5px;height:5px;border-radius:50%;background:var(--accent);}
+.case-col.outcome li::before{background:var(--applied);}
+.case-foot{padding:22px 36px 30px;border-top:1px solid var(--bg-alt);display:flex;flex-wrap:wrap;gap:8px;align-items:center;}
+.case-foot .lbl{font-size:11.5px;font-weight:700;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.6px;margin-right:6px;}
+
+.shots{padding:0 36px 32px;}
+.shots-label{font-size:11.5px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--ink-faint);margin:8px 0 12px;}
+.shots-grid{display:grid;gap:12px;}
+.shots-grid.cols-2{grid-template-columns:1fr 1fr;}
+.shots-grid.cols-4{grid-template-columns:repeat(4,1fr);}
+.shots-grid.cols-3{grid-template-columns:repeat(3,1fr);}
+.shot{border-radius:10px;overflow:hidden;border:1px solid var(--border);}
+.shot img{width:100%;height:150px;object-fit:cover;}
+.shot.fit img{height:auto;aspect-ratio:16/10;object-fit:contain;background:var(--bg-soft);}
+.shot-cap{font-size:11px;color:var(--ink-faint);padding:8px 10px;background:#fff;}
+
+.method-strip{padding:0 36px 30px;display:flex;gap:12px;flex-wrap:wrap;}
+.method-chip{display:flex;align-items:center;gap:8px;font-size:12.5px;font-weight:600;color:var(--ink);background:var(--bg-soft);border:1px solid var(--border);padding:8px 14px;border-radius:999px;}
+.method-chip svg{color:var(--accent-dark);}
+
+.disclaimer{display:flex;gap:12px;align-items:flex-start;background:var(--practice-soft);border:1px solid rgba(47,95,246,0.18);border-radius:12px;padding:16px 18px;margin-bottom:36px;}
+.disclaimer svg{flex-shrink:0;color:var(--practice);margin-top:2px;}
+.disclaimer p{font-size:13px;color:var(--accent-dark);line-height:1.6;}
+
+/* ---------- LEADERSHIP ---------- */
+.lead-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+.lead-card{background:#fff;border:1px solid var(--border);border-radius:18px;overflow:hidden;transition:box-shadow .25s,transform .25s;}
+.lead-card:hover{box-shadow:var(--shadow-md);transform:translateY(-3px);}
+.lead-card.full{grid-column:1/-1;}
+.lead-card.full .lead-metrics{grid-template-columns:repeat(4,1fr);}
+.lead-head{padding:26px 26px 0;}
+.lead-badge{display:inline-block;font-size:10.5px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#fff;background:var(--gold);padding:4px 11px;border-radius:999px;margin-bottom:14px;}
+.lead-card h3{font-size:19px;font-weight:700;color:var(--ink);margin-bottom:8px;line-height:1.3;}
+.lead-role{font-size:12px;color:var(--ink-faint);font-weight:500;margin-bottom:14px;}
+.lead-card p.desc{font-size:13.5px;color:var(--ink-soft);line-height:1.75;padding:0 26px 20px;}
+.lead-metrics{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--bg-alt);}
+.lmetric{padding:16px 10px;text-align:center;border-right:1px solid var(--bg-alt);}
+.lmetric:last-child{border-right:none;}
+.lmetric-val{font-family:'Space Grotesk',sans-serif;font-size:19px;color:var(--ink);font-weight:700;line-height:1;}
+.lmetric-label{font-size:9.5px;letter-spacing:.6px;text-transform:uppercase;color:var(--ink-faint);margin-top:5px;}
+.lead-imgs{padding:18px 26px 26px;}
+.speakers-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:6px 0 16px;}
+.speaker-card{display:flex;gap:12px;align-items:center;padding:12px;background:var(--bg-soft);border-radius:10px;}
+.speaker-card img{width:52px;height:52px;object-fit:cover;border-radius:8px;flex-shrink:0;}
+.speaker-info h4{font-size:12.5px;font-weight:700;color:var(--ink);margin-bottom:2px;}
+.speaker-info p{font-size:11px;color:var(--ink-faint);line-height:1.45;}
+.img-strip{display:grid;gap:10px;}
+.img-strip.cols-3{grid-template-columns:repeat(3,1fr);}
+.img-strip.cols-2{grid-template-columns:repeat(2,1fr);}
+.img-strip img{width:100%;height:150px;object-fit:cover;border-radius:8px;display:block;}
+.img-strip.tall img{height:auto;aspect-ratio:4/3;}
+
+/* TechnoVerse mosaic: two portraits flank two stacked landscapes, so nothing is cropped */
+.tv-mosaic{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;}
+.tv-mosaic img{width:100%;height:100%;object-fit:cover;border-radius:10px;display:block;}
+.tv-mosaic .tv-tall{grid-row:span 2;}
+.tv-mosaic .tv-wide{aspect-ratio:3/2;}
+.tv-mosaic .tv-wide img{position:absolute;inset:0;}
+.tv-mosaic .tv-wide{position:relative;}
+.tv-mosaic .tv-tall{position:relative;}
+.tv-mosaic .tv-tall img{position:absolute;inset:0;}
+.tv-mosaic .tv-tall.p1{grid-column:1;grid-row:1 / span 2;}
+.tv-mosaic .tv-wide.w1{grid-column:2;grid-row:1;}
+.tv-mosaic .tv-wide.w2{grid-column:2;grid-row:2;}
+.tv-mosaic .tv-tall.p2{grid-column:3;grid-row:1 / span 2;}
+
+/* Event feature cards (SoftCom, Alumni) */
+.lead-split{display:grid;grid-template-columns:1.1fr 0.9fr;gap:36px;padding:0 26px 28px;align-items:start;}
+.lead-split .desc{padding:0 !important;margin-bottom:14px;}
+.lead-points{list-style:none;display:flex;flex-direction:column;gap:9px;}
+.lead-points li{font-size:13.5px;color:var(--ink-soft);line-height:1.6;padding-left:18px;position:relative;}
+.lead-points li::before{content:'';position:absolute;left:0;top:8px;width:5px;height:5px;border-radius:50%;background:var(--gold);}
+.lead-media{display:grid;gap:12px;}
+.lead-media img{width:100%;border-radius:10px;display:block;object-fit:cover;background:var(--bg-alt);}
+.lead-media.pair{grid-template-columns:9fr 16fr;align-items:stretch;}
+.lead-media.pair img{height:100%;}
+.lead-media.panel{background:var(--bg-soft);border:1px solid var(--border);border-radius:14px;padding:14px;gap:12px;align-self:center;}
+.lead-media.panel figure{margin:0;}
+.lead-media.panel img{aspect-ratio:3/2;border-radius:8px;}
+.lead-media.panel figcaption{font-size:11.5px;color:var(--ink-faint);padding:6px 2px 0;}
+.lead-media.panel .row2{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.lead-steps{list-style:none;counter-reset:st;display:flex;flex-direction:column;gap:10px;}
+.lead-steps li{counter-increment:st;position:relative;padding:11px 14px 11px 52px;background:var(--bg-soft);border:1px solid var(--border);border-radius:10px;font-size:13px;color:var(--ink-soft);line-height:1.5;}
+.lead-steps li::before{content:counter(st);position:absolute;left:14px;top:50%;transform:translateY(-50%);width:26px;height:26px;border-radius:50%;background:var(--gold-soft);color:var(--gold);font-weight:700;font-size:12.5px;display:flex;align-items:center;justify-content:center;}
+.lead-steps strong{display:block;font-size:13.5px;color:var(--ink);}
+.gallery{display:flex;flex-direction:column;gap:10px;}
+.jrow{display:flex;gap:10px;align-items:flex-start;}
+.jrow img{flex:var(--r) 1 0;min-width:0;width:0;height:auto;aspect-ratio:var(--r);object-fit:cover;border-radius:8px;background:var(--bg-alt);}
+.lead-award{display:inline-flex;align-items:center;gap:8px;margin-bottom:16px;font-size:12.5px;font-weight:600;color:var(--gold);background:var(--gold-soft);border:1px solid rgba(183,121,31,0.25);padding:7px 14px;border-radius:999px;}
+
+.exp-photos{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px;}
+.exp-photos img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:8px;}
+
+/* ---------- CONTACT ---------- */
+.contact-section{background:linear-gradient(160deg,#0F1222 0%,#1E3FAE 100%);border-radius:28px;max-width:1200px;margin:0 auto;padding:80px 60px;text-align:center;color:#fff;}
+.contact-section .eyebrow{color:#BFD0FF;}
+.contact-section .eyebrow::before{background:#BFD0FF;}
+.contact-section .section-title{color:#fff;}
+.contact-section .section-lead{color:rgba(255,255,255,0.72);margin:0 auto 36px;}
+.contact-section .section-head{margin:0 auto 8px;max-width:520px;}
+.contact-links{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;}
+.contact-link{display:flex;align-items:center;gap:10px;padding:14px 24px;border:1px solid rgba(255,255,255,0.22);border-radius:10px;color:#fff;text-decoration:none;font-size:13.5px;font-weight:500;transition:all .2s;background:rgba(255,255,255,0.05);}
+.contact-link:hover{background:rgba(255,255,255,0.14);transform:translateY(-2px);}
+
+footer{padding:36px 40px;display:flex;justify-content:space-between;align-items:center;max-width:1200px;margin:0 auto;flex-wrap:wrap;gap:12px;}
+footer p{font-size:12.5px;color:var(--ink-faint);}
+.footer-logo{font-family:'Space Grotesk',sans-serif;font-size:15px;font-weight:700;color:var(--ink);}
+.footer-logo span{color:var(--accent);}
+
+.fade-up{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease;}
+.fade-up.visible{opacity:1;transform:translateY(0);}
+
+/* ---------- RESPONSIVE ---------- */
+@media(max-width:1080px){
+  .skills-grid{grid-template-columns:1fr 1fr;}
+  .trust-grid{grid-template-columns:1fr 1fr;gap:24px;}
+  .trust-item{border-left:none;padding-left:0;}
+}
+@media(max-width:860px){
+  .wrap{padding:0 24px;}
+  .nav-inner{padding:0 20px;}
+  .nav-links{display:none;}
+  .nav-toggle{display:flex;}
+  .nav-resume.desktop-only{display:none;}
+  .mobile-menu.open{display:flex;}
+  .hero{padding-top:120px;}
+  .hero-inner{grid-template-columns:1fr;padding:0 24px 60px;gap:48px;}
+  .hero-photo{order:-1;max-width:320px;margin:0 auto;}
+  .hero-stats{gap:28px;}
+  .about-grid{grid-template-columns:1fr;gap:36px;}
+  .value-grid{grid-template-columns:1fr 1fr;}
+  section{padding:72px 0;}
+  .cert-card{grid-template-columns:1fr;}
+  .cert-visual{padding:28px;}
+  .cert-competencies{grid-template-columns:1fr;}
+  .skills-grid{grid-template-columns:1fr 1fr;}
+  .case-cols{grid-template-columns:1fr;gap:20px;}
+  .shots-grid.cols-4{grid-template-columns:repeat(2,1fr);}
+  .lead-grid{grid-template-columns:1fr;}
+  .skill-photos{grid-template-columns:1fr 1fr;}
+  .lead-split{grid-template-columns:1fr;gap:22px;}
+  .lead-media.panel{max-width:520px;width:100%;}
+  .shots-grid.cols-3{grid-template-columns:1fr;}
+  .lead-card.full .lead-metrics{grid-template-columns:repeat(2,1fr);}
+  .speakers-grid{grid-template-columns:1fr;}
+  .tl-entry{grid-template-columns:1fr;gap:10px;}
+  .tl-entry::before, .tl-dot{display:none;}
+  .contact-section{padding:56px 28px;border-radius:20px;}
+  footer{flex-direction:column;text-align:center;}
+}
+@media(max-width:520px){
+  .trust-grid{grid-template-columns:1fr;}
+  .value-grid{grid-template-columns:1fr;}
+  .skills-grid{grid-template-columns:1fr;}
+  .skill-photos{grid-template-columns:1fr;}
+  .exp-photos{grid-template-columns:1fr;}
+  .lead-media.pair{grid-template-columns:1fr;}
+  .lead-media.pair img{height:auto;}
+  .tv-mosaic{grid-template-columns:1fr 1fr;}
+  .tv-mosaic .tv-tall.p1,.tv-mosaic .tv-tall.p2{grid-column:auto;grid-row:auto;aspect-ratio:3/4;}
+  .tv-mosaic .tv-wide.w1,.tv-mosaic .tv-wide.w2{grid-column:1 / -1;grid-row:auto;}
+  .shots-grid.cols-2, .shots-grid.cols-4{grid-template-columns:1fr;}
+  .img-strip.cols-3, .img-strip.cols-2{grid-template-columns:1fr;}
+  .case-head, .case-cols, .case-foot, .shots, .method-strip{padding-left:22px;padding-right:22px;}
+  .hero-float-card{position:static;margin-top:16px;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">Amna<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#leadership">Leadership</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="resume.pdf" target="_blank" rel="noopener" class="nav-resume desktop-only">Resume</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#leadership">Leadership</a>
+  <a href="#contact">Contact</a>
+  <a href="resume.pdf" target="_blank" rel="noopener" class="btn btn-primary nav-resume">Download Resume</a>
+</div>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="home" style="padding-bottom:0;">
+  <div class="hero-inner">
+    <div>
+      <h1>Amna Hussain</h1>
+      <p class="hero-role">Project Manager &middot; Agile &amp; Scrum &middot; Planning &amp; Execution</p>
+      <p class="hero-sub">I plan, coordinate, and deliver cross-functional projects, from internal KPI systems to client websites and Agile sprint programs. I turn ambiguous requirements into clear timelines, documentation, and shipped outcomes.</p>
+      <div class="hero-stats">
+        <div><div class="stat-num">3+</div><div class="stat-label">Projects delivered end-to-end</div></div>
+        <div><div class="stat-num">20+</div><div class="stat-label">Daily stakeholder touchpoints</div></div>
+        <div><div class="stat-num">25%</div><div class="stat-label">Reduction in recurring process issues</div></div>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <div class="hero-photo-frame">
+        <img src="assets/img/amna.jpg" alt="Amna Hussain"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TRUST STRIP ================= -->
+<div class="trust">
+  <div class="trust-grid">
+    <div class="trust-item">
+      <div class="trust-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 3v4h6V3M9 12h6M9 16h4"/></svg></div>
+      <div><h4>Planning &amp; Execution</h4><p>Scope, timelines, milestones, delivery</p></div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 2l4 4-4 4M3 12v-2a4 4 0 014-4h14M7 22l-4-4 4-4M21 12v2a4 4 0 01-4 4H3"/></svg></div>
+      <div><h4>Agile &amp; Scrum</h4><p>Sprint planning, backlog, Jira tracking</p></div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
+      <div><h4>Stakeholder Management</h4><p>Client, leadership &amp; cross-team alignment</p></div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><path d="M12 9v4M12 17h.01"/></svg></div>
+      <div><h4>Risk &amp; Problem-Solving</h4><p>Proactive issue identification &amp; resolution</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-text fade-up">
+        <div class="eyebrow">About Me</div>
+        <h2 class="section-title">Execution, ownership &amp; clear communication</h2>
+        <p>I'm a <strong>Project Manager</strong> with a Software Engineering foundation from COMSATS University Islamabad. I plan, coordinate, and deliver cross-functional initiatives. I translate stakeholder needs into structured timelines, clear documentation, and shipped outcomes.</p>
+        <p>My background spans <strong>operations leadership</strong>, <strong>client-facing delivery</strong>, and <strong>Agile sprint coordination</strong>. I build systems and processes that replace ambiguity with visibility, whether that's a KPI dashboard, a client website, or a sprint board.</p>
+      </div>
+      <div class="value-grid fade-up">
+        <div class="value-card">
+          <div class="value-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.4 7.2H22l-6 4.4 2.3 7.1-6.3-4.5-6.3 4.5 2.3-7.1-6-4.4h7.6z"/></svg></div>
+          <h4>Ownership &amp; Execution</h4>
+          <p>I take initiatives from idea to delivery, identifying problems early and following through independently.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 2l4 4-4 4M3 12v-2a4 4 0 014-4h14M7 22l-4-4 4-4M21 12v2a4 4 0 01-4 4H3"/></svg></div>
+          <h4>Agile Adaptability</h4>
+          <p>Comfortable adjusting plans as priorities shift, using Agile and Scrum practices to keep delivery predictable.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg></div>
+          <h4>Cross-Functional Coordination</h4>
+          <p>Experienced bridging design, engineering, marketing, and business stakeholders around one shared plan.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div>
+          <h4>Clear Communication</h4>
+          <p>I translate technical and operational detail into plain-language updates that keep every stakeholder aligned.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section id="skills" class="bg-soft">
+  <div class="wrap">
+    <div class="section-head fade-up">
+      <div class="eyebrow">Competencies</div>
+      <h2 class="section-title">Skills &amp; tools</h2>
+      <p class="section-lead">Organized by category, with an honest signal for how each was gained, with no inflated tool lists.</p>
+    </div>
+    <div class="skill-photos fade-up">
+      <div class="skill-photo">
+        <img src="assets/img/leadership.jpg" alt="Leadership: leading a student team" loading="lazy" style="object-position:center 35%;"/>
+        <div class="skill-photo-body"><h4>Leadership</h4><p>Leading teams and initiatives from the front, with clear direction and ownership.</p></div>
+      </div>
+      <div class="skill-photo">
+        <img src="assets/img/managing-teams.jpg" alt="Managing teams" loading="lazy" style="object-position:center 30%;"/>
+        <div class="skill-photo-body"><h4>Managing Teams</h4><p>Building, organising and supporting teams to deliver together.</p></div>
+      </div>
+      <div class="skill-photo">
+        <img src="assets/img/cross-team-structuring.jpg" alt="Cross-team structuring" loading="lazy" style="object-position:center 30%;"/>
+        <div class="skill-photo-body"><h4>Cross-Team Structuring</h4><p>Aligning multiple teams around clear roles, responsibilities and workflows.</p></div>
+      </div>
+      <div class="skill-photo">
+        <img src="assets/img/public-speaking.jpg" alt="Public speaking" loading="lazy" style="object-position:center 40%;"/>
+        <div class="skill-photo-body"><h4>Public Speaking</h4><p>Presenting and communicating confidently in front of an audience.</p></div>
+      </div>
+    </div>
+    <div class="skills-legend fade-up">
+      <span><span class="legend-dot" style="background:var(--applied);"></span>Applied professionally</span>
+      <span><span class="legend-dot" style="background:var(--practice);"></span>Applied in projects</span>
+      <span><span class="legend-dot" style="background:var(--familiar);"></span>Familiar</span>
+    </div>
+    <div class="skills-grid fade-up">
+      <div class="skill-group">
+        <h4>Project Management</h4>
+        <div class="skill-item">Project Planning &amp; Scoping<span class="skill-dot" style="background:var(--applied);"></span></div>
+        <div class="skill-item">Stakeholder Management<span class="skill-dot" style="background:var(--applied);"></span></div>
+        <div class="skill-item">Risk Management<span class="skill-dot" style="background:var(--applied);"></span></div>
+        <div class="skill-item">Timeline &amp; Resource Mgmt<span class="skill-dot" style="background:var(--applied);"></span></div>
+        <div class="skill-item">Requirements Gathering<span class="skill-dot" style="background:var(--applied);"></span></div>
+        <div class="skill-item">Documentation &amp; Reporting<span class="skill-dot" style="background:var(--applied);"></span></div>
+      </div>
+      <div class="skill-group">
+        <h4>Methodologies</h4>
+        <div class="skill-item">Agile<span class="skill-dot" style="background:var(--applied);"></span></div>
+        <div class="skill-item">Scrum<span class="skill-dot" style="background:var(--applied);"></span></div>
+        <div class="skill-item">Kanban<span class="skill-dot" style="background:var(--practice);"></span></div>
+        <div class="skill-item">Waterfall<span class="skill-dot" style="background:var(--practice);"></span></div>
+      </div>
+      <div class="skill-group">
+        <h4>Tools</h4>
+        <div class="skill-item">Jira<span class="skill-dot" style="background:var(--applied);"></span></div>
+        <div class="skill-item">Excel / Google Sheets<span class="skill-dot" style="background:var(--applied);"></span></div>
+        <div class="skill-item">Slack<span class="skill-dot" style="background:var(--applied);"></span></div>
+        <div class="skill-item">Trello<span class="skill-dot" style="background:var(--practice);"></span></div>
+        <div class="skill-item">Notion<span class="skill-dot" style="background:var(--practice);"></span></div>
+        <div class="skill-item">Asana<span class="skill-dot" style="background:var(--familiar);"></span></div>
+        <div class="skill-item">Microsoft Project<span class="skill-dot" style="background:var(--familiar);"></span></div>
+      </div>
+      <div class="skill-group">
+        <h4>Professional Skills</h4>
+        <div class="skill-item">Communication<span class="skill-dot" style="background:var(--applied);"></span></div>
+        <div class="skill-item">Leadership<span class="skill-dot" style="background:var(--applied);"></span></div>
+        <div class="skill-item">Problem Solving<span class="skill-dot" style="background:var(--applied);"></span></div>
+        <div class="skill-item">Team Coordination<span class="skill-dot" style="background:var(--applied);"></span></div>
+        <div class="skill-item">Documentation<span class="skill-dot" style="background:var(--applied);"></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXPERIENCE TIMELINE ================= -->
+<section id="experience">
+  <div class="wrap">
+    <div class="section-head fade-up">
+      <div class="eyebrow">Work Experience</div>
+      <h2 class="section-title">Professional track record</h2>
+      <p class="section-lead">Operational and coordination roles where planning, stakeholder management, and process improvement were core to the job.</p>
+    </div>
+    <div class="timeline">
+      <div class="tl-entry fade-up">
+        <div class="tl-date">Jul 2025 to Present</div>
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-role">Operational Lead</div>
+          <div class="tl-company">Sysmatixx <span>&middot; Lahore, Pakistan</span></div>
+          <p class="desc">Lead cross-functional operations and coordinate planning and workflow execution for campus engagement initiatives. Work across departments to improve processes, manage resources, and strengthen standard operating procedures for consistent, on-time delivery.</p>
+          <div class="tag-row">
+            <span class="tag">Operations Leadership</span>
+            <span class="tag">Cross-Functional Coordination</span>
+            <span class="tag">Process Improvement</span>
+            <span class="tag">SOP Development</span>
+            <span class="tag">Resource Management</span>
+          </div>
+          <div class="exp-photos">
+            <img src="assets/img/job-fair-1.jpg" alt="Sysmatixx stall at a campus job fair" loading="lazy"/>
+            <img src="assets/img/job-fair-2.jpg" alt="Engaging students at the Sysmatixx job fair" loading="lazy"/>
+            <img src="assets/img/job-fair-3.jpg" alt="Speaking with candidates at the job fair" loading="lazy"/>
+          </div>
+        </div>
+      </div>
+      <div class="tl-entry fade-up">
+        <div class="tl-date">Jan 2025 to Jun 2025</div>
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-role">Operations &amp; Coordination Associate</div>
+          <div class="tl-company">Infinity Wave <span>&middot; Lahore, Pakistan</span></div>
+          <p class="desc">Managed 20+ daily stakeholder touchpoints across multiple concurrent workstreams, maintaining structured trackers and CRM records. Identified process inefficiencies from stakeholder feedback and implemented fixes that reduced issue recurrence by ~25%. Supported end-to-end recruitment coordination for 10+ engineering roles.</p>
+          <div class="tag-row">
+            <span class="tag">Stakeholder Coordination</span>
+            <span class="tag">CRM &amp; Trackers</span>
+            <span class="tag">Process Improvement</span>
+            <span class="tag">Recruitment Coordination</span>
+            <span class="tag">Agile Workflows</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS / CASE STUDIES ================= -->
+<section id="projects" class="bg-soft">
+  <div class="wrap">
+    <div class="section-head fade-up">
+      <div class="eyebrow">Projects</div>
+      <h2 class="section-title">Real delivery, documented properly</h2>
+      <p class="section-lead">Professional initiatives I owned end-to-end, from identifying the problem to delivery.</p>
+    </div>
+
+    <div class="proj-subhead fade-up">
+      <h3>Professional Experience</h3>
+      <div class="line"></div>
+      <p>Real initiatives, client &amp; company names withheld for confidentiality</p>
+    </div>
+
+    <!-- PROJECT 1: KPI Tracking System -->
+    <div class="case-card fade-up">
+      <div class="case-head">
+        <div class="case-badges">
+          <span class="badge badge-real">Professional Experience</span>
+          <span class="badge badge-conf">Business Development &middot; Internal Initiative</span>
+        </div>
+        <h3>KPI Tracking &amp; Performance Management System</h3>
+        <p class="case-context">The Business Development department relied on manual Excel sheets to track KPIs. As the team grew, the sheets became unwieldy, data was inconsistent, and there was no reliable historical record, which made performance evaluation and workforce decisions difficult for both BD leadership and HR.</p>
+      </div>
+      <div class="case-cols">
+        <div class="case-col">
+          <h5>My Role</h5>
+          <ul>
+            <li>Identified the problem and proposed the solution, recognizing that manual tracking was limiting transparency and reliable performance evaluation</li>
+            <li>Led the initiative end-to-end, from ideation through deployment, owning every stage independently</li>
+            <li>Ran requirements gathering across BD leadership, the BD team, and HR to understand what each group needed to track and why</li>
+            <li>Defined the scope and data structure for each KPI, prioritizing metrics most relevant to monthly performance evaluation and reward decisions</li>
+            <li>Owned the design direction, coordinating with UI/UX designers and engineering to align the interface with real stakeholder workflows</li>
+            <li>Managed the development timeline and conducted initial system testing / UAT before handoff to the BD team for final validation</li>
+          </ul>
+        </div>
+        <div class="case-col outcome">
+          <h5>Outcome</h5>
+          <ul>
+            <li>Fully adopted across the entire BD department, and extended beyond its original scope to evaluate interns and new hires during probation</li>
+            <li>Replaced a fragmented, error-prone manual process with a transparent, dashboard-based system used by HR and senior leadership for decision-making</li>
+            <li>Significantly reduced the time and effort previously spent maintaining Excel trackers, freeing up team capacity for higher-value work</li>
+          </ul>
+        </div>
+      </div>
+      <div class="shots">
+        <p class="shots-label">Screenshots</p>
+        <div class="shots-grid cols-3">
+          <div class="shot fit"><img src="assets/img/project-1-meeting-crop.jpg" alt="Stakeholder requirements meeting on Google Meet" loading="lazy"/><div class="shot-cap">My role: stakeholder requirements meeting</div></div>
+          <div class="shot fit"><img src="assets/img/project-1-outcome-system-1.jpg" alt="KPI dashboard showing activity trends and KPIs behind pace" loading="lazy"/><div class="shot-cap">Outcome: KPI dashboard &amp; pace alerts</div></div>
+          <div class="shot fit"><img src="assets/img/project-1-outcome-system-2.jpg" alt="Activity monitor in the KPI system" loading="lazy"/><div class="shot-cap">Outcome: activity monitor</div></div>
+        </div>
+      </div>
+      <div class="case-foot">
+        <span class="lbl">Skills demonstrated</span>
+        <span class="tag">Initiative &amp; Ownership</span>
+        <span class="tag">Requirements Engineering</span>
+        <span class="tag">Stakeholder Management</span>
+        <span class="tag">Cross-Functional Leadership</span>
+        <span class="tag">UAT / QA Ownership</span>
+        <span class="tag">Change Management</span>
+      </div>
+    </div>
+
+    <!-- PROJECT 2: Client Website -->
+    <div class="case-card fade-up">
+      <div class="case-head">
+        <div class="case-badges">
+          <span class="badge badge-real">Professional Experience</span>
+          <span class="badge badge-conf">Client Website &middot; Confidential</span>
+        </div>
+        <h3>Client Website Project</h3>
+        <p class="case-context">A client-facing website project requiring tight alignment between the client, design team, and development team throughout planning and execution.</p>
+      </div>
+      <div class="case-cols">
+        <div class="case-col">
+          <h5>My Role</h5>
+          <ul>
+            <li>Authored the website structure and reference documentation used to secure client sign-off before design work began</li>
+            <li>Owned the client review cycle, collecting feedback, driving revisions, and securing formal approval at each stage</li>
+            <li>Acted as the connective layer between client, design, and development, running requirement-gathering sessions and translating approved documentation into actionable design briefs</li>
+            <li>Managed handoffs between teams to keep the project moving without rework or miscommunication</li>
+          </ul>
+        </div>
+        <div class="case-col outcome">
+          <h5>Outcome</h5>
+          <ul>
+            <li>Delivered approved documentation and design direction that kept the client aligned throughout</li>
+            <li>Kept the project moving with no scope confusion between design and development teams</li>
+          </ul>
+        </div>
+      </div>
+      <div class="case-foot">
+        <span class="lbl">Skills demonstrated</span>
+        <span class="tag">Client Management</span>
+        <span class="tag">Documentation &amp; Requirements Writing</span>
+        <span class="tag">Stakeholder Sign-Off Management</span>
+        <span class="tag">Cross-Team Coordination</span>
+      </div>
+    </div>
+
+    <!-- PROJECT 3: Client App Delivery -->
+    <div class="case-card fade-up">
+      <div class="case-head">
+        <div class="case-badges">
+          <span class="badge badge-real">Professional Experience</span>
+          <span class="badge badge-conf">Client App &middot; Confidential</span>
+        </div>
+        <h3>Client App Delivery</h3>
+        <p class="case-context">End-to-end delivery of a client mobile/web app, spanning requirements gathering, design, development, and marketing launch, coordinated across multiple internal teams.</p>
+      </div>
+      <div class="case-cols">
+        <div class="case-col">
+          <h5>My Role</h5>
+          <ul>
+            <li>Ran client meetings to gather and translate requirements into actionable design and development briefs</li>
+            <li>Coordinated with the design team through iteration cycles, incorporating senior feedback before client approval</li>
+            <li>Tracked sprint execution in Jira, monitoring daily task completion across the development team to prevent backlog buildup</li>
+            <li>Proactively identified stalled tasks, diagnosed root causes, and implemented follow-up mechanisms to keep delivery on track</li>
+            <li>Aligned the marketing team's creative output with the correct resources/assets ahead of launch</li>
+            <li>Managed the client approval gate before releasing designs to development, then oversaw execution through to delivery</li>
+          </ul>
+        </div>
+        <div class="case-col outcome">
+          <h5>Outcome</h5>
+          <ul>
+            <li>Delivered the app with development staying current on Jira and no accumulated backlog</li>
+            <li>Achieved smooth coordination across design, development, and marketing through to launch</li>
+          </ul>
+        </div>
+      </div>
+      <div class="case-foot">
+        <span class="lbl">Skills demonstrated</span>
+        <span class="tag">End-to-End Delivery Ownership</span>
+        <span class="tag">Agile / Jira Sprint Tracking</span>
+        <span class="tag">Cross-Functional Coordination</span>
+        <span class="tag">Risk Identification &amp; Resolution</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= LEADERSHIP & COMMUNITY ================= -->
+<section id="leadership">
+  <div class="wrap">
+    <div class="section-head fade-up">
+      <div class="eyebrow">Leadership &amp; Community</div>
+      <h2 class="section-title">Additional proof of execution</h2>
+      <p class="section-lead">Budget ownership, vendor coordination, and team leadership from building and running community initiatives. Complementary evidence of the same PM muscle.</p>
+    </div>
+
+    <div class="lead-grid">
+      <div class="lead-card full fade-up">
+        <div class="lead-head">
+          <div class="lead-badge">Founder</div>
+          <h3>TechnoVerse: Campus Signature Tech Fest</h3>
+          <div class="lead-role">Founder &amp; Lead Organizer &middot; COMSATS University Islamabad, Lahore Campus</div>
+        </div>
+        <p class="desc">Conceptualized, planned, and launched TechnoVerse from the ground up as the university's flagship annual tech event. Managed multi-stakeholder coordination across technical problem-setters, corporate judges, vendor partners, and 9 concurrent competition tracks. Secured ₨500K in partnership funding by pitching value frameworks to sponsors, and led end-to-end event logistics and speaker programming.</p>
+        <div class="lead-metrics">
+          <div class="lmetric"><div class="lmetric-val">₨500K</div><div class="lmetric-label">Funding Secured</div></div>
+          <div class="lmetric"><div class="lmetric-val">9</div><div class="lmetric-label">Competitions Managed</div></div>
+          <div class="lmetric"><div class="lmetric-val">₨350K</div><div class="lmetric-label">Prize Pool Allocated</div></div>
+          <div class="lmetric"><div class="lmetric-val">3</div><div class="lmetric-label">Tracks Headed</div></div>
+        </div>
+        <div class="lead-imgs">
+          <p class="shots-label">Featured Speakers</p>
+          <div class="speakers-grid">
+            <div class="speaker-card">
+              <img src="assets/img/ahmad-manzoor.jpg" alt="Ahmad Manzoor"/>
+              <div class="speaker-info"><h4>Ahmad Manzoor</h4><p>Founder &amp; CEO<br/>Pakistan Blockchain Institute (PBI)</p></div>
+            </div>
+            <div class="speaker-card">
+              <img src="assets/img/amnan-hussain.jpg" alt="Amnan Hussain"/>
+              <div class="speaker-info"><h4>Amnan Hussain</h4><p>Founder &amp; CEO<br/>IET (Institution of Engineering &amp; Technology)</p></div>
+            </div>
+          </div>
+          <p class="shots-label">Competitions &amp; Activities</p>
+          <div class="tv-mosaic">
+            <div class="tv-tall p1"><img src="assets/img/new-technoverse-1.jpg" alt="TechnoVerse: receiving a shield of appreciation" loading="lazy" style="object-position:center 60%;"/></div>
+            <div class="tv-wide w1"><img src="assets/img/new-technoverse-2.jpg" alt="TechnoVerse: organizing team on the campus lawn" loading="lazy"/></div>
+            <div class="tv-wide w2"><img src="assets/img/new-techoverse-3.jpg" alt="TechnoVerse: team coordinating at the event" loading="lazy" style="object-position:center 35%;"/></div>
+            <div class="tv-tall p2"><img src="assets/img/new-technoverse-4.jpg" alt="TechnoVerse'24 Lead shield presented to Amna Hussain" loading="lazy"/></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lead-card fade-up">
+        <div class="lead-head">
+          <div class="lead-badge">First Female Chairperson &amp; President</div>
+          <h3>ACM Student Chapter, COMSATS Lahore</h3>
+          <div class="lead-role">Chairperson &amp; President &middot; Association for Computing Machinery</div>
+        </div>
+        <p class="desc">Steered the student tech community through a 70% membership surge via targeted growth initiatives, inclusive programming, and team re-organization. Unlocked expanded institutional grants through continuous university alignment and led a portfolio of 6 technical seminars.</p>
+        <div class="lead-metrics">
+          <div class="lmetric"><div class="lmetric-val">70%</div><div class="lmetric-label">Ecosystem Growth</div></div>
+          <div class="lmetric"><div class="lmetric-val">6</div><div class="lmetric-label">Technical Bootcamps</div></div>
+          <div class="lmetric"><div class="lmetric-val">100+</div><div class="lmetric-label">Builders Active</div></div>
+        </div>
+        <div class="lead-imgs">
+          <div class="gallery">
+            <div class="jrow"><img style="--r:1.91" src="assets/img/acm-2.jpg" alt="ACM chapter members outside the campus gate" loading="lazy"/></div>
+            <div class="jrow">
+              <img style="--r:1.5" src="assets/img/acm-1.jpg" alt="ACM seminar audience" loading="lazy"/>
+              <img style="--r:1.5" src="assets/img/acm-3.jpg" alt="ACM team members welcoming guests" loading="lazy"/>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lead-card fade-up">
+        <div class="lead-head">
+          <div class="lead-badge">Google Developers Community</div>
+          <h3>DevFest Lahore: Speaker &amp; Communications Lead</h3>
+          <div class="lead-role">Volunteer Speaker &middot; Tech Interviewer &middot; GDG Lahore &times; Txcel</div>
+        </div>
+        <p class="desc">Represented GDG Lahore on stage as a community speaker and interactive moderator. Led fireside interviews with industry founders and engineering leaders, and owned the multi-channel digital narrative pre- and post-event to scale community reach.</p>
+        <div class="lead-metrics">
+          <div class="lmetric"><div class="lmetric-val">5K+</div><div class="lmetric-label">Digital Reach</div></div>
+          <div class="lmetric"><div class="lmetric-val">3+</div><div class="lmetric-label">Growth Channels</div></div>
+          <div class="lmetric"><div class="lmetric-val">7+</div><div class="lmetric-label">Founder Spotlights</div></div>
+        </div>
+        <div class="lead-imgs">
+          <div class="gallery">
+            <div class="jrow">
+              <img style="--r:1.333" src="assets/img/devfest-3.jpg" alt="DevFest Lahore volunteers with certificates" loading="lazy"/>
+              <img style="--r:1.75" src="assets/img/devfest-2.jpg" alt="DevFest Lahore on stage" loading="lazy"/>
+            </div>
+            <div class="jrow">
+              <img style="--r:0.75" src="assets/img/devfest-1.jpg" alt="DevFest 2024 speaker certificate and goodies" loading="lazy"/>
+              <img style="--r:0.79" src="assets/img/devfest-4.jpg" alt="Speaking with a guest at DevFest Lahore" loading="lazy"/>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lead-card full fade-up">
+        <div class="lead-head">
+          <div class="lead-badge">Best Ambassador Award</div>
+          <h3>SoftCom'23: Campus Ambassador &amp; Team Lead</h3>
+          <div class="lead-role">Team Lead &middot; COMSATS University Lahore &middot; ACM SoftCom, GIKI</div>
+        </div>
+        <div class="lead-split">
+          <div>
+            <p class="desc">SoftCom is a flagship technical event hosted by GIKI, where universities from across Pakistan send teams to compete and take part in a wide range of events. I led the COMSATS Lahore delegation, managing the team and its logistics from preparation through to the event itself.</p>
+            <ul class="lead-points">
+              <li>Led the COMSATS Lahore team and coordinated every part of its participation</li>
+              <li>Managed team members, responsibilities and day-to-day activity at the event</li>
+              <li>Supported the team's performance across the competitions it entered</li>
+              <li><strong>Won the Best Ambassador award</strong> for excellent team management and team performance</li>
+            </ul>
+          </div>
+          <div class="lead-media pair">
+            <img src="assets/img/sheild-softcom.jpg" alt="SoftCom'23 Best Ambassador shield awarded to Amna Hussain" loading="lazy"/>
+            <img src="assets/img/softcom-ambassador.jpg" alt="COMSATS Lahore SoftCom team" loading="lazy" style="object-position:center;"/>
+          </div>
+        </div>
+      </div>
+
+      <div class="lead-card full fade-up">
+        <div class="lead-head">
+          <div class="lead-badge">Event Lead</div>
+          <h3>Alumni Association Dinner 2024</h3>
+          <div class="lead-role">Team Lead &amp; Event Manager &middot; Department of Computer Science &middot; COMSATS University Lahore</div>
+        </div>
+        <div class="lead-split">
+          <div>
+            <p class="desc">Managed the alumni association event for the Department of Computer Science, from forming the team to hosting the dinner. Everything was planned, handled and supervised end to end.</p>
+            <ol class="lead-steps">
+              <li><strong>Formed &amp; led the team</strong><span>Built the organising team and assigned responsibilities.</span></li>
+              <li><strong>Invited the alumni</strong><span>Reached out to all alumni for the alumni association dinner.</span></li>
+              <li><strong>Coordinated the election</strong><span>Worked with the candidates for the alumni association election.</span></li>
+              <li><strong>Souvenirs</strong><span>Had souvenirs made for the alumni.</span></li>
+              <li><strong>Planned &amp; managed the event</strong><span>Planned every part of it and supervised it on the day.</span></li>
+            </ol>
+          </div>
+          <div class="lead-media panel">
+            <figure class="fig-wide"><img src="assets/img/alumni-association-2.jpg" alt="Alumni Dinner 2024 guests and organisers on stage" loading="lazy"/><figcaption>Alumni and guests at the dinner</figcaption></figure>
+            <div class="row2">
+              <figure><img src="assets/img/alumni-association-1.jpg" alt="Presenting a certificate at Alumni Dinner 2024" loading="lazy"/><figcaption>Certificate presentation</figcaption></figure>
+              <figure><img src="assets/img/alumni-association-3.jpg" alt="Alumni Dinner 2024 banner and souvenir shields" loading="lazy"/><figcaption>Souvenir shields</figcaption></figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" style="padding-bottom:60px;">
+  <div class="wrap">
+    <div class="contact-section fade-up">
+      <div class="section-head">
+        <div class="eyebrow">Let's Connect</div>
+        <h2 class="section-title">Ready to plan and deliver your next project</h2>
+        <p class="section-lead">Open to Project Management and Coordination roles. Let's talk about how I can help your team plan, execute, and ship.</p>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:amnahussain9803@gmail.com" class="contact-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+          amnahussain9803@gmail.com
+        </a>
+        <a href="https://www.linkedin.com/in/amna-hussain-549426251/" target="_blank" rel="noopener" class="contact-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          linkedin.com/in/amna-hussain
+        </a>
+        <a href="tel:+923369082003" class="contact-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.1 6.1l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +92 336 908 2003
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-logo">Amna<span>.</span></div>
+  <p>Amna Hussain &middot; Project Manager</p>
+  <p>Islamabad, Pakistan</p>
+</footer>
+
+<script>
+  // Scroll-reveal
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(el => { if (el.isIntersecting) el.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+  // Mobile menu
+  const navToggle = document.getElementById('navToggle');
+  const mobileMenu = document.getElementById('mobileMenu');
+  navToggle.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', isOpen);
+    navToggle.classList.toggle('open', isOpen);
+  });
+  mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    mobileMenu.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', false);
+  }));
+
+  // Active nav link on scroll
+  const sections = document.querySelectorAll('section[id]');
+  const navAnchors = document.querySelectorAll('.nav-links a');
+  const navObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const id = entry.target.getAttribute('id');
+      const link = document.querySelector(`.nav-links a[href="#${id}"]`);
+      if (!link) return;
+      if (entry.isIntersecting) {
+        navAnchors.forEach(a => a.classList.remove('active'));
+        link.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-40% 0px -50% 0px', threshold: 0 });
+  sections.forEach(s => navObserver.observe(s));
+</script>
+</body>
+</html>
